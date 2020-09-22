@@ -1,6 +1,30 @@
 # ctfs
 
 # RE
+## `checksec`
+
+```
+siuser@ubuntu:~/repos/ctfs/fusion/level03$ ./exploit.py 
+[*] '/home/siuser/repos/ctfs/fusion/level03/level03'
+    Arch:     i386-32-little
+    RELRO:    No RELRO
+    Stack:    No canary found
+    NX:       NX enabled
+    PIE:      No PIE (0x8048000)
+    RPATH:    '/opt/fusion/lib'
+    FORTIFY:  Enabled
+```
+
+NX - Used to indicate if the stack is executable or not. This means can't inject. Need ROP.
+PIE - Position Independent. We will neeed a leak.
+
+# ROPGadget
+
+## Installation
+```
+pip install ROPGadget
+```
+
 ## Searching for systems calls
 
 ```
@@ -115,3 +139,8 @@ This is how we want the program to look:
   [arg2     ] -> tmp
   [arg3     ] -> 1024
 ```
+
+
+# References
+## Binary Exploitation
+[John Hammond: ROP](https://www.youtube.com/watch?v=i5-cWI_HV8o&pbjreload=101)
