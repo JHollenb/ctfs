@@ -1,0 +1,21 @@
+ Lab07: 2048-game
+=================
+
+   Tired of doing cs6265? Here is a game for you. But, score more
+   than 3,932,156 score, which seems like a theoretical upper bound.
+   Then, we will bring you a flag.
+   
+   See, target.c but no binary provided (hint: fully protected)!
+   
+   * Ref
+     - https://en.wikipedia.org/wiki/2048_(video_game)
+
+ - target    : target
+ - type      : INETD
+ - arch      : 32
+ - level     : 60
+ - points    : 20
+ - uid       : 27060
+ - release   : 03-06-2020 00:00:00
+ - deadline  : 03-20-2020 00:00:00
+ - hashval   : DB1CF4A8

@@ -1,0 +1,25 @@
+ Lab05: fmtstr-write
+====================
+
+   Overwrite a variable with '%n' fmt string.
+   
+   # ref. BUGS section
+   $ man 3 printf
+   
+   The target binary is:
+   
+       CANARY    : ENABLED
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 15
+ - points    : 20
+ - uid       : 25015
+ - release   : 02-14-2020 00:00:00
+ - deadline  : 02-28-2020 00:00:00
+ - hashval   : B80C5FE2

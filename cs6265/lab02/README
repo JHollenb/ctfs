@@ -1,0 +1,27 @@
+# Lab02: warm-up2
+
+This is another warm-up lab that prepares you with the basic techniques
+of writing shellcode, which is a small piece of code used as the payload
+in the exploitation of vulnerability. You will learn how to write shellcode
+on 32-bit 64-bit architecture. Your shellcode will need to be injected
+into the vulnerable binary, and read the flag from /proc/flag under different
+circumstances.
+
+## Problems
+
+  + [level 00] tut02-shellcode      [20 points]
+  + [level 01] bomb201-readfirst    [20 points]
+  + [level 02] bomb202-objdump      [20 points]
+  + [level 03] bomb203-signal       [20 points]
+  + [level 04] bomb204-minfuck      [20 points]
+  + [level 05] env                  [20 points]
+  + [level 06] shellcode32          [20 points]
+  + [level 07] shellcode64          [20 points]
+  + [level 08] shellcode-min        [20 points]
+  + [level 09] shellcode-poly       [20 points]
+  + [level 10] shellcode-ascii      [20 points]
+
+## Refs
+
+  - https://www.exploit-db.com/docs/english/21013-shellcoding-in-linux.pdf
+  - http://phrack.org/issues/57/15.html

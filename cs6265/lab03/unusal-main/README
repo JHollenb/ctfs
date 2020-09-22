@@ -1,0 +1,14 @@
+ Lab03: unusal-main
+===================
+
+   A stack pointer is restored a bit differently in main()?
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 40
+ - points    : 20
+ - uid       : 23040
+ - release   : 01-10-2020 00:00:00
+ - deadline  : 01-24-2020 00:00:00
+ - hashval   : 74F57A26

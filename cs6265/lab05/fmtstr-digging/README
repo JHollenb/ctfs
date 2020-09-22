@@ -1,0 +1,25 @@
+ Lab05: fmtstr-digging
+======================
+
+   The format string specification is a popular, convenient way of
+   formatting/printing text in C, but it's a monster.
+   
+     $ man 3 printf
+   
+   The target binary is:
+   
+       CANARY    : ENABLED
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : ENABLED
+       RELRO     : FULL
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 9
+ - points    : 20
+ - uid       : 25009
+ - release   : 02-14-2020 00:00:00
+ - deadline  : 02-28-2020 00:00:00
+ - hashval   : 6D29C21C

@@ -1,0 +1,24 @@
+ Lab09: force
+=============
+
+   House of Force (up-to-date malloc)
+   
+   ref: http://phrack.org/issues/66/10.html
+   
+   The target binary is:
+   
+       CANARY    : ENABLED
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : local
+ - arch      : 64
+ - level     : 45
+ - points    : 20
+ - uid       : 29045
+ - release   : 04-10-2020 00:00:00
+ - deadline  : 04-24-2020 00:00:00
+ - hashval   : 512972A3

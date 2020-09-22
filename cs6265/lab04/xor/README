@@ -1,0 +1,15 @@
+ Lab04: xor
+===========
+
+   Try overwriting the return address? It is protected with
+   Random XOR canary.
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 10
+ - points    : 20
+ - uid       : 24010
+ - release   : 02-07-2020 00:00:00
+ - deadline  : 02-21-2020 00:00:00
+ - hashval   : 75325182

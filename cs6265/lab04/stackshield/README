@@ -1,0 +1,16 @@
+ Lab04: stackshield
+===================
+
+   Your frame pointer and return addresses are shielded, meaning that you can
+   not subvert their values. To get the flag, you don't have to overwrite
+   them at all.
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 20
+ - points    : 20
+ - uid       : 24020
+ - release   : 02-07-2020 00:00:00
+ - deadline  : 02-21-2020 00:00:00
+ - hashval   : A94FDC80

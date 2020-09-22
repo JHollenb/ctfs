@@ -1,0 +1,21 @@
+ Lab03: jmp-to-env
+==================
+
+   Try?
+   
+     $ SHELLCODE="hi" env
+   
+   Where do environment variables locate in a process? Could
+   you jump there by exploiting a buffer overflow bug?!
+   
+   ref: http://phrack.org/issues/49/14.html
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 15
+ - points    : 20
+ - uid       : 23015
+ - release   : 01-10-2020 00:00:00
+ - deadline  : 01-24-2020 00:00:00
+ - hashval   : 89D24C15

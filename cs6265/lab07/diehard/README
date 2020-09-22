@@ -1,0 +1,18 @@
+ Lab07: diehard
+===============
+
+   Canary goes crazy. Never die. How can we efficiently guess? Try this challenge
+   in your local environment, first!
+   
+   $ ./target
+   $ nc localhost 10704
+
+ - target    : target
+ - type      : STANDALONE
+ - arch      : 64
+ - level     : 30
+ - points    : 20
+ - uid       : 27030
+ - release   : 03-06-2020 00:00:00
+ - deadline  : 03-20-2020 00:00:00
+ - hashval   : BB466953

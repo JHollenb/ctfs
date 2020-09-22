@@ -1,0 +1,23 @@
+ Lab06: inc1
+============
+
+   You can increase an arbitrary memory by one. How can we exploit
+   this binary?
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 70
+ - points    : 20
+ - uid       : 26070
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : CE7DE13E

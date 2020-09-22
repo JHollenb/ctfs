@@ -1,0 +1,22 @@
+ Lab05: profile
+===============
+
+   How can you bypass DEP / ASLR in this binary?
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 50
+ - points    : 20
+ - uid       : 25050
+ - release   : 02-14-2020 00:00:00
+ - deadline  : 02-28-2020 00:00:00
+ - hashval   : A4D0FAC9

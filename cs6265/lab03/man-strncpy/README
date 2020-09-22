@@ -1,0 +1,15 @@
+ Lab03: man-strncpy
+===================
+
+   strcpy() is unsafe and strncpy() is safe? Try "man strncpy"
+   and read it carefully.
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 55
+ - points    : 20
+ - uid       : 23055
+ - release   : 01-10-2020 00:00:00
+ - deadline  : 01-24-2020 00:00:00
+ - hashval   : 4C45B0F3

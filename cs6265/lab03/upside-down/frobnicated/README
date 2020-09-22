@@ -1,0 +1,16 @@
+ Lab03: frobnicated
+===================
+
+   Nothing works as it is, and often manipulated.
+   
+     $ man memfrob
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 23
+ - points    : 20
+ - uid       : 23023
+ - release   : 01-10-2020 00:00:00
+ - deadline  : 01-24-2020 00:00:00
+ - hashval   : E569718A

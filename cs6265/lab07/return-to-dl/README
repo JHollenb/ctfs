@@ -1,0 +1,19 @@
+ Lab07: return-to-dl
+====================
+
+   We used a known offset to calculate the system() address.
+   But if you understand how dynamic loader works, you don't need it.
+   
+   NOTE: This binary is using dedicated libc, not system libc.
+   
+   ref : http://phrack.org/issues/58/4.html
+
+ - target    : run.sh
+ - type      : INETD
+ - arch      : 32
+ - level     : 58
+ - points    : 20
+ - uid       : 27058
+ - release   : 03-06-2020 00:00:00
+ - deadline  : 03-20-2020 00:00:00
+ - hashval   : A8317C8C

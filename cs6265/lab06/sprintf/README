@@ -1,0 +1,22 @@
+ Lab06: sprintf
+===============
+
+   sprintf()
+   
+   The target binary is:
+   
+       CANARY    : ENABLED
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : local
+ - arch      : 64
+ - level     : 40
+ - points    : 20
+ - uid       : 26040
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : 39F3C284

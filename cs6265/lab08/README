@@ -1,0 +1,29 @@
+# Lab08: misc1
+
+Various topics are covered in this lab, including int overflow, race
+conditions, time-of-check-time-of-use, bad-casting vulnerabilities,
+and sandbox escapes.
+
+* Problems
+
+  + [level 00] tut08-reliable-01    [20 points]
+  + [level 01] tut08-reliable-02    [20 points]
+  + [level 02] 2048-int             [20 points]
+  + [level 03] intq                 [20 points]
+  + [level 04] race                 [20 points]
+  + [level 05] urandom              [20 points]
+  + [level 06] concat               [20 points]
+  + [level 07] type                 [20 points]
+  + [level 08] django               [20 points]
+  + [level 09] tictou               [20 points]
+  + [level 10] sandbox-seccomp      [20 points]
+  + [level 11] simple-aeg           [20 points]
+
+Specifically, tictou, simple-aeg and django are remote challenges.
+django runs at port 10840 (HTTP server);
+tictou runs at port 10845 and 10846 (HTTP server);
+simple-aeg runs at port 10855.
+
+* Refs
+  - http://phrack.org/issues/60/10.html
+  - http://blog.llvm.org/2011/05/what-every-c-programmer-should-know.html

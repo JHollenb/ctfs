@@ -1,0 +1,32 @@
+$ echo "1=%p|2=%p|3=%p|4=%p|5=%p|6=%p|7=%p|8=%p|9=%p|10=%p|11=%p|12=%p|13=%p|14=%p|15=%p"  | ./crackme0x00
+
+IOLI Crackme Level 0x00
+Password:Invalid Password! 1=0x64|2=0x8048a40|3=0xffffd418|4=0xf7fdfe89|5=0x1|6=(nil)|7=0xffffd418|8=0x804a00c|9=0xf7fe4ff8|10=0x61766e49|11=0x2064696c|12=0x73736150|13=0x64726f77|14=0x3d312021|15=0x327c7025
+
+// Next 15 address on the stack
+1=0x64| 		// Size of buffer
+2=0x8048a40|
+3=0xffffd418|
+4=0xf7fdfe89|
+5=0x1|
+6=(nil)|
+7=0xffffd418|
+8=0x804a00c|
+9=0xf7fe4ff8|
+10=0x61766e49|
+11=0x2064696c|
+12=0x73736150|
+13=0x64726f77|
+14=0x3d312021|
+15=0x327c7025
+
+#
+\xaa\xaa\xaa\xaa%5$n
+AAAA%10$n
+0xffffd3a4%10$n
+
+
+echo "BB\x08\x04\xa0\x50%1\$p" | ./crackme0x00
+echo "BB\x08\x04\xa0\x50|1=%p|2=%p|3=%p|4=%p|5=%p|6=%p|7=%p|8=%p|9=%p|10=%p|11=%p|12=%p|13=%p|14=%p|15=%p"  | ./crackme0x00
+Password:Invalid Password! 1=0x64|2=0x8048a40|3=0xffe1f428 ...
+

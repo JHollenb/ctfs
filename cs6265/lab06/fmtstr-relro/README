@@ -1,0 +1,33 @@
+ Lab06: fmtstr-relro
+====================
+
+   Overwriting GOT was so convenient. In fact, we can secure
+   a target binary by making the GOT region read-only; just
+   bind all functions when the binary is about to launch
+   and make the region read-only, so called RELRO
+   (RELocation Read Only).
+   
+   What happen when a program terminates?
+   
+     $ man atexit
+   
+   Also, you might want to see these source files from glibc:
+   exit.c, atexit.c, cxa_atexit.c and sysdep-64.h
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : FULL
+
+ - target    : target
+ - type      : local
+ - arch      : 64
+ - level     : 90
+ - points    : 20
+ - uid       : 26090
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : FDE49E63

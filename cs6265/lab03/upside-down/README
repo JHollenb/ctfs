@@ -1,0 +1,29 @@
+# Lab03: buf-ovfl
+
+This lab will teach you how to exploit stack-based buffer overflows,
+which are a very common flaw in history, starting from the very first
+computer warm. Importantly, learning the basic concept of buffer
+overflows is the first step toward learning more sophisticated types
+of vulnerabilities later.
+
+* Problems
+
+  + [level 00] tut03-stackovfl      [20 points]
+  + [level 01] tut03-pwntool        [20 points]
+  + [level 02] simple-bof           [20 points]
+  + [level 03] jmp-to-env           [20 points]
+  + [level 04] jmp-to-stack         [20 points]
+  + [level 05] frobnicated          [20 points]
+  + [level 06] argc0                [20 points]
+  + [level 07] lack-of-four         [20 points]
+  + [level 08] jmp-to-where         [20 points]
+  + [level 09] unusal-main          [20 points]
+  + [level 10] man-strncpy          [20 points]
+  + [level 11] upside-down          [20 points]
+
+* Refs
+
+  - <http://phrack.org/issues/49/14.html>
+  - <http://www.cs.ucsb.edu/~kemm/courses/cs177/bufovfl.pdf>
+  - <http://www.sans.org/reading-room/whitepapers/threats/buffer-overflows-dummies-481>
+  - <http://phrack.org/issues/55/8.html>

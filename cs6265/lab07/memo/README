@@ -1,0 +1,24 @@
+ Lab07: memo
+============
+
+   Could you find out what is the bug in this memo manager?
+   
+   NOTE: May need a little brute-force(< 1min)
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : INETD
+ - arch      : 45
+ - level     : 40
+ - points    : 20
+ - uid       : 27040
+ - release   : 03-06-2020 00:00:00
+ - deadline  : 03-20-2020 00:00:00
+ - hashval   : FCBC2FAC

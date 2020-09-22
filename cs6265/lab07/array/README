@@ -1,0 +1,22 @@
+ Lab07: array
+=============
+
+   A simulator and its source code.
+   
+   The target binary is:
+   
+       CANARY    : ENABLED
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : INETD
+ - arch      : 45
+ - level     : 35
+ - points    : 20
+ - uid       : 27035
+ - release   : 03-06-2020 00:00:00
+ - deadline  : 03-20-2020 00:00:00
+ - hashval   : 12DD2118

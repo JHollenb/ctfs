@@ -1,0 +1,14 @@
+ Lab06: pop
+===========
+
+   using pop, control your registers
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 25
+ - points    : 20
+ - uid       : 26025
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : 9D9AC696
