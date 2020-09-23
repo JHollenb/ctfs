@@ -1,0 +1,18 @@
+ Lab08: tictou
+==============
+
+   Time-of-check-time-of-use (TICTOU) in a web site! There are two
+   sites opened synchronously to serve all students.
+   
+   There are two servers: $PORT and $PORT + 1
+
+ - target    : run.sh
+ - type      : STANDALONE
+ - arch      : 32
+ - level     : 40
+ - points    : 20
+ - uid       : 28040
+ - release   : 04-03-2020 00:00:00
+ - deadline  : 04-17-2020 00:00:00
+ - hashval   : CEE7BC6C
+ - port      : 9001

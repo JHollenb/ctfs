@@ -1,0 +1,30 @@
+ Lab02: shellcode-ascii
+=======================
+
+   In this challenge, you will write a shellcode that contains "pure"
+   alphanumeric characters, perhaps to evade a rule-based filtering
+   system, such as IDS.  Write a shellcode that reads the flag from
+   /proc/flag!
+   
+   ; build
+   $ ./make.sh
+   
+   ; run your shellcode
+   $ cat readflag.bin | ./target
+   
+   ; submit your flag on the submission site
+   
+   NOTE. you must get your flag from the ./target binary!
+   
+   * Refs
+     https://nets.ec/Ascii_shellcode
+
+ - target    : target
+ - type      : misc
+ - arch      : 64
+ - level     : 55
+ - points    : 20
+ - uid       : 22055
+ - release   : 01-24-2020 00:00:00
+ - deadline  : 02-07-2020 00:00:00
+ - hashval   : 9F27D90B

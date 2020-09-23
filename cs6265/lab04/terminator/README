@@ -1,0 +1,16 @@
+ Lab04: terminator
+==================
+
+   Four special chars--NULL(0x00), CR (0x0d), LF (0x0a) and EOF (0xff),
+   are effective combinations to mitigate stack overflow. Return
+   address can be overwritten but you should not kill the canary next by.
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 38
+ - points    : 20
+ - uid       : 24038
+ - release   : 02-07-2020 00:00:00
+ - deadline  : 02-21-2020 00:00:00
+ - hashval   : B39EEE9E

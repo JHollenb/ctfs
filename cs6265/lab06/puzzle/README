@@ -1,0 +1,24 @@
+ Lab06: puzzle
+==============
+
+   $ ./target.py
+   Your mission is to make a ROP chain that prints "ROP_ATTACK_SUCCESS"
+   >
+   
+   The target binary is:
+   
+       CANARY    : ENABLED
+       FORTIFY   : ENABLED
+       NX        : ENABLED
+       PIE       : ENABLED
+       RELRO     : FULL
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 30
+ - points    : 20
+ - uid       : 26030
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : 2BDDDD83

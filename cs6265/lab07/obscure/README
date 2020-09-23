@@ -1,0 +1,17 @@
+ Lab07: obscure
+===============
+
+   What's this? Exploitations are not so different across platforms.
+   
+   * Refs
+     - http://repository.root-me.org/Exploitation%20-%20Syst%C3%A8me/Unix/EN%20-%20Return-Oriented%20Programming%20without%20returns%20on%20ARM.pdf
+
+ - target    : run.sh
+ - type      : INETD
+ - arch      : 32
+ - level     : 20
+ - points    : 20
+ - uid       : 27020
+ - release   : 03-06-2020 00:00:00
+ - deadline  : 03-20-2020 00:00:00
+ - hashval   : EEDBEC73

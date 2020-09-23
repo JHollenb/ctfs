@@ -1,0 +1,14 @@
+ Lab02: bomb203-signal
+======================
+
+   Enter the flag you've got from bomb203-signal
+
+ - target    : ../bomb
+ - type      : misc
+ - arch      : 64
+ - level     : 25
+ - points    : 20
+ - uid       : 22025
+ - release   : 01-17-2020 00:00:00
+ - deadline  : 01-31-2020 00:00:00
+ - hashval   : 7C8528EE

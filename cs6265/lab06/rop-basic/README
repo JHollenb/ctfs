@@ -1,0 +1,22 @@
+ Lab06: rop-basic
+=================
+
+   What gadgets should we use to exploit this target binary?
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 10
+ - points    : 20
+ - uid       : 26010
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : 4E11A59E

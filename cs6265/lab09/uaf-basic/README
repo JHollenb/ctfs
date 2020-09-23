@@ -1,0 +1,14 @@
+ Lab09: uaf-basic
+=================
+
+   Exploring a preliminary concept of the use-after-free vulnerability.
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 20
+ - points    : 20
+ - uid       : 29020
+ - release   : 04-10-2020 00:00:00
+ - deadline  : 04-24-2020 00:00:00
+ - hashval   : 7A71DD7F

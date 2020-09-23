@@ -1,0 +1,25 @@
+ Lab04: assassination
+=====================
+
+   We shouldn't kill any citizen in war. Do not kill canary but
+   target the return address.
+   
+   This binary is protected by SSP.
+   
+       $ checksec target
+       Arch:     i386-32-little
+       RELRO:    Partial RELRO
+       Stack:    Canary found
+       NX:       NX disabled
+       PIE:      No PIE (0x8048000)
+       RWX:      Has RWX segments
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 40
+ - points    : 20
+ - uid       : 24040
+ - release   : 02-07-2020 00:00:00
+ - deadline  : 02-21-2020 00:00:00
+ - hashval   : FC7F53B8

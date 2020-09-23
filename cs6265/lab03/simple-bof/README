@@ -1,0 +1,19 @@
+ Lab03: simple-bof
+==================
+
+   Hijack the eip of start().
+   
+   * Refs
+   
+    - Smashing The Stack For Fun And Profit
+      (http://phrack.org/issues/49/14.html)
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 10
+ - points    : 20
+ - uid       : 23010
+ - release   : 01-10-2020 00:00:00
+ - deadline  : 01-24-2020 00:00:00
+ - hashval   : CB18CBA1

@@ -1,0 +1,10 @@
+  250  vim tmp.asm 
+  251  history | grep nasm
+  252  nasm -f elf64 tmp.asm -o tmp.o
+  253  history
+  254  objcopy -S -O binary -j .text tmp.o tmp.bin
+  255  scp tmp.bin lab02@52.201.10.159:/tmp/jakeholl-lab02/
+  256  history
+  257  tail history
+  258  history | tail
+  259  history | tail > nasm_for_tmp.log

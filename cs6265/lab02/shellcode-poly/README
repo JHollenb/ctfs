@@ -1,0 +1,29 @@
+ Lab02: shellcode-poly
+======================
+
+   In this challenge, you will be creating a shellcode that works on
+   both x86 (32-bit) and x86_64 (64-bit) architectures!
+   
+   $ cat readflag.bin | ./target
+   
+   target invokes two ./target32 (32-bit) and ./target64 (64-bit)
+   binaries so if successful, it dumps two flags for you.
+   
+   For testing, you can also invoke it individually against ./target32
+   and ./target64. But you must get flags from the ./target to get points.
+   
+   * Refs
+   
+   https://mewa.github.io/articles/2017-07/polyglot-assembly-101
+   https://github.com/ctfs/write-ups-2014/tree/master/def-con-ctf-qualifier-2014/polyglot
+   https://www.robertxiao.ca/hacking/defcon2018-assembly-polyglot/
+
+ - target    : target
+ - type      : misc
+ - arch      : 64
+ - level     : 50
+ - points    : 20
+ - uid       : 22050
+ - release   : 01-17-2020 00:00:00
+ - deadline  : 01-31-2020 00:00:00
+ - hashval   : 98A79FC2

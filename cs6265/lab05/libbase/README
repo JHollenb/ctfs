@@ -1,0 +1,52 @@
+ Lab05: libbase
+===============
+
+   Did you notice anything?
+   
+     $ ./check
+     stack   : 0xfff4bf70
+     system(): 0xf7523eb0
+     printf(): 0xf7532450
+   
+     $ ./check
+     stack   : 0xff82ebf0
+     system(): 0xf75bceb0
+     printf(): 0xf75cb450
+   
+     - your stack is randomized
+     - but .. addresses of system() and printf() seem to have a pattern
+   
+   Hint 1. where is your libc?
+   
+      $ man ldd
+   
+   Hint 2. navigate libc!
+   
+      ; symbols
+      $ readelf -s [/lib/libc.so.6]
+   
+      ; search '/bin/sh' string in [/lib/libc.so.6]
+      $ ropper --file [/lib/libc.so.6] --string /bin/sh
+   
+      ; learn!
+      $ ropper --help
+   
+   Hint 3. learn/use template.py
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : ENABLED
+       RELRO     : FULL
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 5
+ - points    : 20
+ - uid       : 25005
+ - release   : 02-14-2020 00:00:00
+ - deadline  : 02-28-2020 00:00:00
+ - hashval   : 0C3DE261

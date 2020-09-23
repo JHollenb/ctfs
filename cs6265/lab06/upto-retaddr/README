@@ -1,0 +1,23 @@
+ Lab06: upto-retaddr
+====================
+
+   You cannot write beyond the return address, but can we utilize
+   the payload in the heap region?
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 32
+ - points    : 20
+ - uid       : 26032
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : 42A7510D

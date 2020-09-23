@@ -1,0 +1,22 @@
+ Lab06: find-gadget
+===================
+
+   Find gadgets in a simple binary to construct ROPs.
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : FULL
+
+ - target    : target
+ - type      : local
+ - arch      : 64
+ - level     : 35
+ - points    : 20
+ - uid       : 26035
+ - release   : 02-21-2020 00:00:00
+ - deadline  : 03-06-2020 00:00:00
+ - hashval   : 92C05088

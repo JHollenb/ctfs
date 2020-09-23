@@ -1,0 +1,35 @@
+ Lab02: shellcode64
+===================
+
+   In this challenge, you will preare a shellcode for a 64-bit architecture!
+   
+   ; build
+   $ ./make.sh
+   
+   ; shellcode to launch
+   $ objdump -m i386:x86-64 -D -b binary shellcode.bin
+   
+   ; fire
+   $ (cat shellcode.bin; echo;  cat) | ./test_your_shellcode
+   ...
+   cat /proc/flag
+   
+   As you might guess, that is not your flag. Please write a payload
+   (readflag.S) that reads the flag directly.
+   
+   ; run your shellcode
+   $ cat readflag.bin | ./target
+   
+   ; submit your flag on the submission site
+   
+   NOTE. you must get your flag from the ./target binary!
+
+ - target    : target
+ - type      : misc
+ - arch      : 64
+ - level     : 40
+ - points    : 20
+ - uid       : 22040
+ - release   : 01-24-2020 00:00:00
+ - deadline  : 02-07-2020 00:00:00
+ - hashval   : 5FB999E8

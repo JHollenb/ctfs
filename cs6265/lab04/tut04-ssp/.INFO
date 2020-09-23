@@ -1,0 +1,14 @@
+ Lab04: tut04-ssp
+=================
+
+   A warm-up tutorial.
+
+ - target    : target-ssp
+ - type      : local
+ - arch      : 32
+ - level     : 2
+ - points    : 20
+ - uid       : 24002
+ - release   : 02-07-2020 00:00:00
+ - deadline  : 02-21-2020 00:00:00
+ - hashval   : 6DC903BE

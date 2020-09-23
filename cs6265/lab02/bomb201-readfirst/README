@@ -1,0 +1,14 @@
+ Lab02: bomb201-readfirst
+=========================
+
+   Enter the flag you've got from bomb201-readfirst
+
+ - target    : ../bomb
+ - type      : misc
+ - arch      : 64
+ - level     : 15
+ - points    : 20
+ - uid       : 22015
+ - release   : 01-17-2020 00:00:00
+ - deadline  : 01-31-2020 00:00:00
+ - hashval   : 7C8528EE

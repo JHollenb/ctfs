@@ -1,0 +1,23 @@
+ Lab07: fmtstr-heap2
+====================
+
+   Oh, I realized that you can use stack in the local environment.
+   But now you are in the remote :)
+   
+   The target binary is:
+   
+       CANARY    : disabled
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : disabled
+       RELRO     : Partial
+
+ - target    : target
+ - type      : INETD
+ - arch      : 45
+ - level     : 36
+ - points    : 20
+ - uid       : 27036
+ - release   : 03-06-2020 00:00:00
+ - deadline  : 03-20-2020 00:00:00
+ - hashval   : 22358557

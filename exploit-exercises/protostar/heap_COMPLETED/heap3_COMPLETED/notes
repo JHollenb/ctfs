@@ -1,0 +1,79 @@
+GNU gdb (GDB) 7.0.1-debian
+Copyright (C) 2009 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "i486-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from /opt/protostar/bin/heap3...done.
+(gdb) set disassembly-flavor intel
+(gdb) set pagination off
+(gdb) disassemble
+No frame selected.
+(gdb) disassemble main
+0x08048899 <main+16>:   call   0x8048ff2 <malloc>
+0x080488d5 <main+76>:   call   0x8048750 <strcpy@plt>
+0x08048911 <main+136>:  call   0x8049824 <free>
+End of assembler dump.
+(gdb) b *0x8048ff2
+Breakpoint 1 at 0x8048ff2: file common/malloc.c, line 3211.
+(gdb) b *0x8048750
+Breakpoint 2 at 0x8048750
+(gdb) b *0x8049824
+Breakpoint 3 at 0x8049824: file common/malloc.c, line 3583.
+(gdb) r AAAAAAAAAAAA BBBBBBBBBBBB CCCCCCCCCCCC
+(gdb) c # Continue to first strcpy
+Breakpoint 2, 0x08048750 in strcpy@plt ()
+(gdb) info proc mappings # Check for address of heap
+process 4929
+cmdline = '/opt/protostar/bin/heap3'
+cwd = '/opt/protostar/bin'
+exe = '/opt/protostar/bin/heap3'
+Mapped address spaces:
+
+        Start Addr   End Addr       Size     Offset objfile
+         0x804c000  0x804d000     0x1000          0           [heap]
+        0xbffeb000 0xc0000000    0x15000          0           [stack]
+
+(gdb) define hook-stop
+Type commands for definition of "hook-stop".
+End with a line saying just "end".
+>x/56wx 0x804c000
+>x/3i $eip
+>end
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /opt/protostar/bin/heap3 AAAAAAAAAAAA BBBBBBBBBBBB CCCCCCCCCCCC
+0x804c000:      Error while running hook_stop:
+Cannot access memory at address 0x804c000
+
+Breakpoint 1, malloc (bytes=32) at common/malloc.c:3211
+3211    in common/malloc.c
+(gdb) c
+Continuing.
+0x804c000:      0x00000000      0x00000029      0x00000000      0x00000000 # True size is 40, not 32
+0x804c010:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c020:      0x00000000      0x00000000      0x00000000      0x00000fd9
+0x804c030:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c040:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c050:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c060:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c070:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c080:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c090:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c0a0:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c0b0:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c0c0:      0x00000000      0x00000000      0x00000000      0x00000000
+0x804c0d0:      0x00000000      0x00000000      0x00000000      0x00000000
+0x8048ff2 <malloc>:     push   ebp
+0x8048ff3 <malloc+1>:   mov    ebp,esp
+0x8048ff5 <malloc+3>:   push   edi
+
+Breakpoint 1, malloc (bytes=32) at common/malloc.c:3211
+3211    in common/malloc.c
+(gdb) set {int}0x804c054=100
+(gdb) x/56wx 0x804c000
+

@@ -1,0 +1,37 @@
+ Lab02: shellcode32
+===================
+
+   This challenge helps you prepare shellcodes on x86 (32-bit) architecture,
+   which is a basic step toward writing an advanced exploitation. Write a
+   shellcode (asm!) that reads a flag from /proc/flag!
+   
+    ; build
+    $ ./make.sh
+   
+    ; shellcode to launch
+    $ objdump -m i386 -D -b binary shellcode.bin
+   
+    ; fire
+    $ (cat shellcode.bin; echo; cat) | ./test_your_shellcode
+    ...
+    cat /proc/flag
+   
+    Unfortunately that is not your flag. Please write a payload
+    (readflag.S) that directly reads the flag from the /proc/flag.
+   
+    ; run your shellcode
+    $ cat readflag.bin | ./target 
+   
+    ; submit your flag on the submission site
+   
+    NOTE. you must get your flag from the ./target binary!
+
+ - target    : target
+ - type      : misc
+ - arch      : 32
+ - level     : 35
+ - points    : 20
+ - uid       : 22035
+ - release   : 01-24-2020 00:00:00
+ - deadline  : 02-07-2020 00:00:00
+ - hashval   : 0B6764C9

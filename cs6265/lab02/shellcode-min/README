@@ -1,0 +1,28 @@
+ Lab02: shellcode-min
+=====================
+
+   This problem will prepare you to write a short and concise shellcode
+   to make your shellcode more flexible and powerful, perhaps evading
+   anomaly-based IDS that drops lengthy requests. Please write a shellcode
+   that reads the flag from /proc/flag! But, minimize the size of the
+   shellcode as much as you can. 
+   
+   ; build
+   $ ./make.sh
+   
+   ; run your shellcode
+   $ cat readflag.bin | ./target
+   
+   ; submit your flag on the submission site
+   
+   NOTE. you must get your flag from the ./target binary!
+
+ - target    : target
+ - type      : misc
+ - arch      : 64
+ - level     : 45
+ - points    : 20
+ - uid       : 22045
+ - release   : 01-24-2020 00:00:00
+ - deadline  : 02-07-2020 00:00:00
+ - hashval   : 301C8F4A

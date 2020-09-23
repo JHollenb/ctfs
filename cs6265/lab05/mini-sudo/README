@@ -1,0 +1,26 @@
+ Lab05: mini-sudo
+=================
+
+   Let's exploit CVE-2012-0809 in the full-protected 'sudo' binary!
+   
+   The sudo binary is:
+   
+       CANARY    : ENABLED
+       FORTIFY   : disabled
+       NX        : ENABLED
+       PIE       : ENABLED
+       RELRO     : FULL
+   
+   * Refs
+     - http://archives.neohapsis.com/archives/fulldisclosure/2012-01/att-0591/advisory_sudo.txt
+     - http://www.vnsecurity.net/research/2012/02/16/exploiting-sudo-format-string-vunerability.html
+
+ - target    : sudo
+ - type      : local
+ - arch      : 32
+ - level     : 60
+ - points    : 20
+ - uid       : 25060
+ - release   : 02-14-2020 00:00:00
+ - deadline  : 02-28-2020 00:00:00
+ - hashval   : 3D898BAC

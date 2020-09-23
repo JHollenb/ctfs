@@ -1,0 +1,14 @@
+ Lab03: argc0
+=============
+
+   argc needs to be 0. What's a potential attack vector to this binary?
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 25
+ - points    : 20
+ - uid       : 23025
+ - release   : 01-10-2020 00:00:00
+ - deadline  : 01-24-2020 00:00:00
+ - hashval   : 4DDD1E5A

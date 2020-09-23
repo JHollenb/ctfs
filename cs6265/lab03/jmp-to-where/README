@@ -1,0 +1,17 @@
+ Lab03: jmp-to-where
+====================
+
+   No more environment, arguments, and buffer. Where can you jump?
+   
+   * Refs
+     - http://asm.sourceforge.net/articles/startup.html
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 35
+ - points    : 20
+ - uid       : 23035
+ - release   : 01-10-2020 00:00:00
+ - deadline  : 01-24-2020 00:00:00
+ - hashval   : AAF778C5

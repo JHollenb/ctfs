@@ -1,0 +1,17 @@
+ Lab08: type
+============
+
+   Different from C, C++ is Object Oriented Programming(OOP) Language.
+   To support inheritance and polymorphism which are important feature in OOP, 
+   C++ provides special keyword 'virtual'.
+   If a programmer use 'virtual' improperly, the program can confuse the type of object.
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 30
+ - points    : 20
+ - uid       : 28030
+ - release   : 04-03-2020 00:00:00
+ - deadline  : 04-17-2020 00:00:00
+ - hashval   : 8BC7E324

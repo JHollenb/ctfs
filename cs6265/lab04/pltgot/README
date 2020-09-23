@@ -1,0 +1,36 @@
+ Lab04: pltgot
+==============
+
+   Having SSP in a binary often helps exploitation, as it ends up having
+   larger attack surface, SSP code itself! Given a random memory overwrite,
+   
+       (faimilar?)
+       strcpy(buf, msg);
+       ...
+       strcpy(msg, buf);
+   
+   abuse PLT.GOT of the '__stack_chk_fail'!
+   
+   This binary is protected by SSP.
+   
+       $ checksec target
+       Arch:     i386-32-little
+       RELRO:    Partial RELRO
+       Stack:    Canary found
+       NX:       NX disabled
+       PIE:      No PIE (0x8048000)
+       RWX:      Has RWX segments
+   
+   * Refs
+     - PLT.GOT: https://www.technovelty.org/linux/plt-and-got-the-key-to-code-sharing-and-dynamic-libraries.html
+     - http://www.coresecurity.com/files/attachments/StackGuard.pdf
+
+ - target    : target
+ - type      : local
+ - arch      : 32
+ - level     : 50
+ - points    : 20
+ - uid       : 24050
+ - release   : 02-07-2020 00:00:00
+ - deadline  : 02-21-2020 00:00:00
+ - hashval   : AF4A6F2D

@@ -1,0 +1,56 @@
+# Lab07: remote
+
+Challenges are running on the CTF server, on ports 10700-10710.
+For example, to connect to the tutorial you can do,
+```
+$ nc [server_ip_address] 10700
+```
+with the CTF server's ip address given on Canvas and Piazza.
+
+Port numbers for the challenges are sequential:
+```
+tut07-socket    10700
+tut07-remote    10701
+passwd          10702
+mini-shellshock 10703
+obscure         10704
+diehard         10705
+array           10706
+fmtstr-heap2    10707
+memo            10708
+2kills          10709
+return-to-dl    10710
+2048-game       10711
+```
+
+FYI, our server runs Ubuntu 18.04.2 LTS with the following libraries:
+```
+- Linux 4.15.0-1057-aws x86_64 GNU/Linux
+- /usr/arm-linux-gnueabi/lib/libc-2.27.so (md5: 4dff573013a9a75e29df6197d41899c2)
+- /lib/i386-linux-gnu/libc.so.6           (md5: 13274accb3f37815a223d1ce3a26da9d)
+- /lib/x86_64-linux-gnu/libc.so.6         (md5: 50390b2ae8aaa73c47745040f54e602f)
+```
+
+You can download the challenge files from the sumbission site (e.g., OMSCS):
+```
+https://allspark.gtisc.gatech.edu:5002/static/labs/lab07/passwd/passwd.zip
+```
+
+* Problems
+
+  + [level 00] tut07-socket         [20 points]
+  + [level 01] tut07-remote         [20 points]
+  + [level 02] passwd               [20 points]
+  + [level 03] mini-shellshock      [20 points]
+  + [level 04] obscure              [20 points]
+  + [level 05] diehard              [20 points]
+  + [level 06] array                [20 points]
+  + [level 07] fmtstr-heap2         [20 points]
+  + [level 08] memo                 [20 points]
+  + [level 09] 2kills               [20 points]
+  + [level 10] return-to-dl         [20 points]
+  + [level 11] 2048-game            [20 points]
+
+
+* Refs
+  - https://docs.python.org/2/howto/sockets.html
