@@ -1,0 +1,66 @@
+# Nmap 7.60 scan initiated Thu Dec  3 03:52:24 2020 as: nmap -sC -sV -oN nmap/initial 10.10.62.216
+Nmap scan report for 10.10.62.216
+Host is up (0.20s latency).
+Not shown: 972 closed ports
+PORT      STATE    SERVICE        VERSION
+21/tcp    open     ftp            vsftpd 3.0.3
+22/tcp    open     ssh            OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 5a:4f:fc:b8:c8:76:1c:b5:85:1c:ac:b2:86:41:1c:5a (RSA)
+|   256 ac:9d:ec:44:61:0c:28:85:00:88:e9:68:e9:d0:cb:3d (ECDSA)
+|_  256 30:50:cb:70:5a:86:57:22:cb:52:d9:36:34:dc:a5:58 (EdDSA)
+82/tcp    filtered xfer
+139/tcp   open     netbios-ssn    Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+311/tcp   filtered asip-webadmin
+445/tcp   open     netbios-ssn    Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+667/tcp   filtered disclose
+808/tcp   filtered ccproxy-http
+1236/tcp  filtered bvcontrol
+1583/tcp  filtered simbaexpress
+1801/tcp  filtered msmq
+2003/tcp  filtered finger
+2049/tcp  filtered nfs
+2103/tcp  filtered zephyr-clt
+2393/tcp  filtered ms-olap1
+2602/tcp  filtered ripd
+2869/tcp  filtered icslap
+3128/tcp  open     http-proxy     Squid http proxy 3.5.12
+|_http-server-header: squid/3.5.12
+|_http-title: ERROR: The requested URL could not be retrieved
+3333/tcp  open     http           Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Vuln University
+3370/tcp  filtered satvid-datalnk
+3476/tcp  filtered nppmp
+5566/tcp  filtered westec-connect
+8000/tcp  filtered http-alt
+8701/tcp  filtered unknown
+9100/tcp  filtered jetdirect
+9943/tcp  filtered unknown
+16080/tcp filtered osxwebadmin
+50389/tcp filtered unknown
+Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_nbstat: NetBIOS name: VULNUNIVERSITY, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: vulnuniversity
+|   NetBIOS computer name: VULNUNIVERSITY\x00
+|   Domain name: \x00
+|   FQDN: vulnuniversity
+|_  System time: 2020-12-02T22:52:57-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-12-03 03:52:58
+|_  start_date: 1601-01-01 00:00:00
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec  3 03:53:03 2020 -- 1 IP address (1 host up) scanned in 38.45 seconds
