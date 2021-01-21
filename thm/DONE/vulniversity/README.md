@@ -17,17 +17,6 @@ export WORDLIST=/opt/wordlists/directory-list-2.3-medium.txt
 gobuster dir -u "http://$IP:3333" -w $WORDLIST -e | tee gobuster.log
 ```
 
-## enum4linux
-```
-/opt/enum4linx/enum4linx.pl -a $IP | tee enum4linux.log
-```
-
-## hyra
-For finding passwords
-```
-hydra -l jan -P /opt/SecLists/Passwords/Leaked-Databases/rockyou.txt ssh://$IP
-```
-
 # linpeas!
 target terminal:
 ```

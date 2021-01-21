@@ -1,2 +1,2 @@
 #!/bin/bash
-export IP=10.10.235.158
+export IP=10.10.247.201

