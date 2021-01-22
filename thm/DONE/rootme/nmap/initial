@@ -1,0 +1,46 @@
+# Nmap 7.60 scan initiated Fri Jan 22 02:15:39 2021 as: nmap -sC -sV -Pn -T3 -oN nmap/initial 10.10.79.155
+Nmap scan report for 10.10.79.155
+Host is up (0.20s latency).
+Not shown: 972 closed ports
+PORT      STATE    SERVICE        VERSION
+22/tcp    open     ssh            OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4a:b9:16:08:84:c2:54:48:ba:5c:fd:3f:22:5f:22:14 (RSA)
+|   256 a9:a6:86:e8:ec:96:c3:f0:03:cd:16:d5:49:73:d0:82 (ECDSA)
+|_  256 22:f6:b5:a6:54:d9:78:7c:26:03:5a:95:f3:f9:df:cd (EdDSA)
+53/tcp    open     tcpwrapped
+80/tcp    open     http           Apache httpd 2.4.29 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-title: HackIT - Home
+777/tcp   filtered multiling-http
+981/tcp   filtered unknown
+1001/tcp  filtered webpush
+1026/tcp  filtered LSA-or-nterm
+1054/tcp  filtered brvread
+1067/tcp  filtered instl_boots
+1862/tcp  filtered mysql-cm-agent
+2382/tcp  filtered ms-olap3
+3333/tcp  filtered dec-notes
+3546/tcp  filtered unknown
+3800/tcp  filtered pwgpsi
+3878/tcp  filtered fotogcad
+4129/tcp  filtered nuauth
+5060/tcp  filtered sip
+5414/tcp  filtered statusd
+5500/tcp  filtered hotline
+5633/tcp  filtered beorl
+7103/tcp  filtered unknown
+9502/tcp  filtered unknown
+9535/tcp  filtered man
+13782/tcp filtered netbackup
+15000/tcp filtered hydap
+22939/tcp filtered unknown
+38292/tcp filtered landesk-cba
+49165/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan 22 02:16:39 2021 -- 1 IP address (1 host up) scanned in 60.56 seconds
